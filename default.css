@@ -1,0 +1,82 @@
+	body {
+  font-family: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #E5E2E5;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	}
+    
+	a {
+		text-decoration: none;
+		font-weight: bold;
+  }
+  
+	h1 {
+		font-size: 2.0em;
+		font-weight: normal;
+		margin: 0.2em 0em;
+		COLOR: #46845F;
+	}
+  
+	h2 {
+		font-size: 1.7em;
+		margin: 0.2em 0em;
+		font-weight: normal;
+	}
+  
+	h3 {
+		font-size: 1.4em;
+		margin: 0.2em 0em;
+		font-weight: normal;
+	}
+  
+  .top a:link, .top a:visited, .top a:hover { 
+    text-decoration: none; 
+    color: #CCCCff; 
+    font-weight: bold; 
+  }
+  
+	a:link {color: blue;}
+	a:visited {color: #333399;}
+	a:hover {color: #339933;}
+
+	.maintext{
+    text-align: center;
+    font-size: 160%;
+    line-height: 140%;    
+    font-weight: bold;
+    color: #4076A6;
+	}
+			
+	br {
+	clear: both;
+	}
+
+	hr{
+	color: #236763;
+	}
+	
+  .red  {
+	font-weight: bold;
+	color: red;
+	font-size: 80%;
+	}
+
+  .center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-60%, -50%);
+  border: 0;
+  padding: 40px 180px;
+ 	text-align: left;
+  background: url("doctor3.png") no-repeat;
+  background-position: right;
+  }
+  
+  .em11 a {
+    font-size: 110%;    
+    line-height: 125%;
+  }
+  
