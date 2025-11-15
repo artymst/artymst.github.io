@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<title>PhysicsGraphPy</title>
+	<link rel="icon" type="image/x-icon" href="icon.ico">
+<STYLE type="text/css"><!-- 
+    body  {
+	  BACKGROUND-COLOR: #E5E2E5;
+      text-align: center;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+	  padding: 20px 20px;
+    }
+    body, td, th {
+      margin: 20px auto 20px auto;
+      font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+      }
+    a   {
+      text-decoration: none;
+      font-weight: bold;
+      }
+    h1  {
+      font-size: 2.0em;
+      font-weight: bold;
+      margin: 0.2em 0em;
+      COLOR: #960099;
+      }
+    h2  {
+      font-size: 1.7em;
+      margin: 0.2em 0em;
+      font-weight: bold;
+	  COLOR: #960099;
+      }
+    h3  {
+      font-size: 1.2em;
+      padding: 0.2em;
+	  BACKGROUND-COLOR: #cdbecf; 
+      }
+    TD.menu {BACKGROUND-COLOR: #D8D8B8; TEXT-ALIGN: center}
+		
+	ol, ul {margin: .6em 0 .2em 1em; padding: 0px; list-style: outside;}
+	pre {margin: 0px; padding: 0px; BACKGROUND-COLOR: #F8F8F8; color: maroon;}
+		
+    .caption {BACKGROUND-COLOR: #BACBDA; font-size: 1.3em; font-weight: bold; color: #000066}
+    .maroon {color: maroon;} 
+	strong {color: #465186;} 
+	.smallfont {font-size: 0.7em;}
+	
+</STYLE>
+	<meta name="viewport" content="device-width, initial-scale=1">
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX7LDPJNPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZX7LDPJNPT');
+</script>
+
+<body>
+<div align="center">
+<div style="width: 800px; text-align: justify;">
+
+<div style="BACKGROUND-COLOR: #cdbecf; padding: 0 1em 0.7em 1em">
+<h2>PhysicsGraphPy<SUP><FONT SIZE="-1">TM</FONT></SUP></h2>
+... a free, simple programming language to learn basic code for Windows&reg; applications
+</div><br>
+
+<strong>Version 0.20 alpha</strong><br>
+Last updated: 15 November 2025<br>
+Copyright &copy; 2025 Arata Yamashita<br>
+<span class="maroon">Freeware - no nags, no ads and fully functional.</span><br>
+<a href="#download">Download python library</a><br><br>
+
+<h3>Overview:</h3>
+
+PhysicsGraphPy<SUP><FONT SIZE="-1">TM</FONT></SUP> is a beginner-friendly Python library for simulating and visualizing motion in physics. With this library, you can easily create and analyze kinematics and projectile motion scenarios, generate position, velocity, and acceleration graphs, as well as animate motion using simple code. PhysicsGraphPy is ideal for students, educators, and anyone exploring basic physics concepts programmatically.
+
+This package is distributed under the MIT License and is available for manual installation directly from this website. Just download the installation files and follow the provided instructions to start experimenting with motion graphs and physics simulations in your own Python projects.<br><br>
+
+
+<h3>Features:</h3>
+
+PhysicsGraphPy offers a rich set of features for exploring motion in physics. It supports simulation of free-fall, kinematics, and projectile trajectories, allowing you to analyze movement with custom parameters. The library can generate easy-to-read position, velocity, and acceleration graphs, and also provides animation tools to visualize motion step by step. With built-in calculators for quantities like maximum height, time of flight, and range, as well as options to export data in CSV or Markdown format, PhysicsGraphPy makes it simple to study and present physics concepts. For added flexibility, the package includes unit conversion tools, SI unit checking, and options to customize graph styles—all designed to streamline physics experiments and learning in Python.
+
+<br><br>
+
+<h3>Requirements:</h3>
+
+To use PhysicsGraphPy, you need to have Python 3.7 or higher installed on your computer. The library also requires the popular matplotlib and numpy packages for graphing and numerical calculations. Before installing PhysicsGraphPy, make sure these dependencies are available, or simply use pip to handle the installation automatically. No other specialized software is required—just a standard Python environment is enough to start simulating and visualizing motion in physics with this package.
+
+<br><br>
+
+
+<h3>Supported systems:</h3>
+
+PhysicsGraphPy is designed to work on all major operating systems that support Python, including Windows, macOS, and most Linux distributions. As long as you have a compatible version of Python installed, along with the necessary dependencies, you can use PhysicsGraphPy on desktop or laptop computers. The library is intended for standard desktop Python environments and may not be fully compatible with limited mobile or browser-based interpreters.<br><br>
+
+<h3>Main Commands:</h3>
+
+PhysicsGraphPy offers a set of intuitive commands to make simulating and plotting motion in physics easy for beginners and advanced users alike. Below are the main functions and classes you’ll use when working with this library:<br>
+
+<br>
+<strong>Commands</strong><br><br>
+
+MotionGraph - Create and simulate basic motion.
+<pre>
+obj = MotionGraph(10, 0, -9.8)  # start at 10 m, 0 m/s, gravity
+obj.simulate(3)
+</pre><br>
+  
+ProjectileMotion - Model and analyze projectile trajectories.
+<pre>
+pm = ProjectileMotion(20, 45)  # 20 m/s at 45 degrees
+pm.simulate(pm.time_of_flight())
+</pre><br>
+
+plot_all – Plot position, velocity, and acceleration graphs
+
+<pre> plot_all(obj) </pre><br>
+
+plot_projectile – Plot the path of a projectile
+
+<pre> plot_projectile(pm) </pre><br>
+
+<pre> plot_projectile(pm) </pre><br>
+animate_motion – Animate how an object moves
+
+<pre> animate_motion(obj) </pre><br>
+
+export_csv – Export simulation data to a CSV file
+
+<pre> export_csv("free_fall.csv", obj.times, obj.positions, obj.velocities) </pre><br>
+
+convert_units – Convert between common units
+
+<pre> meters = convert_units(100, "cm", "m") # returns: 1.0 </pre><br>
+
+format_markdown – Convert results to Markdown format for reports
+
+<pre> summary = format_markdown("Results", {"Max Height": 10, "Range": 40}) </pre><br>
+
+check_si_units – Check if a unit is a standard SI unit
+
+<pre> check_si_units("m", "m") # No error if SI </pre><br>
+
+<h3>Education Use:</h3>
+PhysicsGraphPy is an excellent tool for educational purposes, making it easy for students and teachers to explore and visualize fundamental physics concepts. With its simple commands, clear graphing features, and animation capabilities, the library helps learners better understand motion, acceleration, and projectile dynamics through hands-on coding. Its intuitive design allows users to quickly create, simulate, and analyze experiments, making PhysicsGraphPy a valuable resource for classrooms, homework, and self-guided study in physics education.<BR><BR><br>
+
+
+<h3>Licence to Use - Terms and Conditions:</h3>
+MIT License
+
+Copyright (c) 2025 artymst
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.<br><br>
+<br>
+
+<A name="download"></A>
+<h3>Download python library:</h3>
+
+<a href="physicsgraphpy-0.2.0-py3-none-any.whl" download target="_blank" rel="noopener noreferrer">
+  Download WHL file
+</a> (4KB)<br><br>
+
+<a href="physicsgraphpy-0.2.0.tar.gz" download target="_blank" rel="noopener noreferrer">
+  Download TAR.GZ file
+</a> (4.1KB)<br><br><br>
+
+<strong>Changes in 0.20:</strong>
+<ul>
+    <li class="indent">added further commands for SI units</li>
+</ul>
+<strong>Changes in 0.18:</strong>
+<ul>
+    <li class="indent">made system more stable and improved performace</li>
+</ul>
+<strong>Changes in 0.12:</strong>
+<ul>
+    <li class="indent">crash bug fix</li>
+
+</ul><br><br>
+
+                 
+</div> </div>
+<? require ("counter.html");?>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
